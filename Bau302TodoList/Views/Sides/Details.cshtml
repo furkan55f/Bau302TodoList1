@@ -1,0 +1,58 @@
+﻿@model Bau302TodoList.Models.Side
+
+@{
+    ViewBag.Title = "Detaylar";
+}
+
+<h2>Detaylar</h2>
+
+<div>
+    <h4>Taraf</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateBy)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Listeye Geri Dön", "Index")
+</p>
